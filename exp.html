@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta name = "viewport"
+        content = "width=device-width, initial - scale = 1.0"/>
+        <title>Expense App</title>
+        <!--Font Icons-->
+        <link rel = "stylesheet" 
+        href = https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css
+        />
+
+        <!--google Fonts-->
+        <link rel = "stylesheet" href = "style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <div class="wrapper">
+        <div class = "container">
+            <div class = "sub-container">
+                <div class = "total-amount-container">
+                    <h3>Budget</h3>
+                    <p class = "hide error"
+                    id = "budget-error">
+                    Value Cannot be empty ot negative
+                </p>
+                <input
+                    type = "number"
+                    id = "total-amount"
+                    placeholder = "Enter Total Amount" />
+                <button class = "submit"
+                id = "total-amount-button"> Set Budget</button>
+               
+                </div>
+                <div class = "user-amount-container">
+                    <h3>Expenses</h3>
+                    <p class = "hide error"
+                    id = "product-title-error">
+                    Value Cannot be empty
+                    </p>
+
+                    <!--title of product placeholder-->
+                    <input type = "text"
+                    class = "product-title"
+                    id = "product-title"
+                    placeholder = "Enter Title of the Product"/>
+                    
+                    <!--Cost of product placeholder-->
+                    
+                    <input
+                    type = "number"
+                    id = "user-amount"
+                    placeholder = "Enter Cost of Product"
+                    />
+
+                    <button class = "submit"
+                    id = "check-amount"> Check Amount</button>
+                    
+                </div>
+            </div>
+            <!--Output-->
+            <div class = "output-container flex-space">
+                <div>
+                    <p>Total Budget</p>
+                    <span id = "amount">0</span>
+                </div>
+                <div>
+                    <p>Expenses</p>
+                    <span id = "expenditure-value">0</span>
+                </div>
+                <div>
+                    <p>Balance</p>
+                    <span id = "balance-amount">0</span>
+                </div>
+            </div>
+
+
+
+
+
+    </div>
+    <!--list-->
+    <div class = "list">
+        <h3>Expense List</h3>
+        <div class = "list-container" id="list">
+        </div>
+    </div>
+    <!--- Script -->
+    <script src = "script.js"></script>
+
+</body>
+</html>
